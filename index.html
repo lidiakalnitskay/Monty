@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monty</title>
+	<link rel="stylesheet" href="css/blocks/reset-style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/blocks/header.css">
+	<link rel="stylesheet" href="css/blocks/left-content.css">
+	<link rel="stylesheet" href="css/blocks/right-content.css">
+	<link rel="stylesheet" href="css/blocks/gallery.css">
+	<link rel="stylesheet" href="css/blocks/footer.css">
+	<link rel="stylesheet" href="css/blocks/see-all-style.css">
+	<link rel="stylesheet" href="css/blocks/mobile-nav-button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container-header">
+			<div class="header-logo">Monty</div>
+			<div class="header-wrap">
+				<div class="header-icon">
+					<img src="img/header/person.svg" alt="Личный кабинет">
+					<img src="img/header/favorite.svg" alt="Избранное">
+					<img src="img/header/basket-header.svg" alt="Корзина">
+				</div>
+				<button type="button" class="mobile-nav-button dis-flex">
+					<span class="mobile-nav-button__icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="mobile-nav">
+			<nav class="mobile-nav-list">
+				<ul>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="left-content">
+				<div class="left-content__imgs">
+					<div>
+						<img id="largeImg" src="img/main-photo//block1.svg" alt="Large image">
+					</div>
+					<ul id="thumbs">
+						<li>
+							<a class="light" href="img/main-photo/block1.svg" >
+								<img src="img/main-photo/mini1.svg" alt="photo">
+							</a>
+						</li>
+						<li>
+							<a class="light" href="img/main-photo/block2.svg" >
+								<img src="img/main-photo/mini2.svg" alt="photo">
+							</a>
+						</li>
+						<li>
+							<a class="light" href="img/main-photo/block3.svg" >
+								<img src="img/main-photo/mini3.svg" alt="photo">
+							</a>
+						</li>
+						<li>
+							<a class="light" href="img/main-photo/block4.svg" >
+								<img src="img/main-photo/mini4.svg" alt="photo">
+							</a>
+						</li>
+						<li>
+							<a class="light" href="img/main-photo/block5.svg" >
+								<img src="img/main-photo/block5.svg" alt="photo">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-content">
+				<div class="product-name">
+					<h2 class="product-name__title">Название товара</h2>
+					<p class="product-name__art">Артикул товара </p>
+				</div>
+				<div class="price">
+					<p class="price__new">500 ₽</p>
+					<p class="price__old">1 000 ₽</p>
+					<img class="price__img" src="img/product-description/arrow.svg" alt="Стрелка" >
+				</div>
+				<div class="status">
+					<div class="status__discount">скидка -30%</div>
+					<div class="status__discount">акция -10%</div>
+				</div>
+				<form>
+					<fieldset class="clothing-size">
+						<label for="#"></label>
+						<select class="content-select font" name="#" id="#" required>
+							<option class="font" value="">Выбрать размер</option>
+							<option class="font" value="s">s</option>
+							<option class="font" value="m">m</option>
+							<option class="font" value="l">l</option>
+							<option class="font" value="xl">xl</option>
+							<option class="font" value="xxl">xxl</option>
+						</select>
+					</fieldset>
+				</form>
+				<div class="link">
+					<a href="#" >Определить размер</a>
+				</div>
+				<div class="add-to-shopping-cart">
+					<div class="btn-wrap">
+						<button class="btn__add">Добавить в корзину</button>
+						<button class="btn__favorite">
+							<img src="img/header/favorite.svg" alt="favorite">
+						</button>
+					</div>
+				</div>
+				<div class="link">
+					<a href="#" >Купить в 1 клик</a>
+				</div>
+				<div class="line">
+					<span></span>
+				</div>
+				<div class="link">
+						<img src="img/product-description/Closes.svg" alt="">
+						<a href="#">Описание товара</a>
+				</div>
+				<div class="link">
+						<img src="img/product-description/clock.svg" alt="">
+						<a href="#" >Доставка и возврат</a>
+				</div>
+				<div class="link">
+					<img src="img/product-description/pay.svg" alt="">
+					<a href="#" >Способы доставки</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="see-all-style">
+				<div class="link">
+					<a href="#" >Посмотреть все стили</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="gallery">
+
+				<figure class="gallery__item--big">
+					<div class="hidden-block">
+						<img class="icon-more-big" src="img/gallery-photo/icon-more.svg" alt="icon">
+						<div class="icon-basket-big dis-flex">
+							<img src="img/gallery-photo/basket.svg" alt="icon">
+						</div>
+						<div>
+							<a class="icon-text-big dis-flex" href="">Узнай, что на мне</a>
+						</div>
+						<div class="icon-like-big dis-flex">
+							<img src="img/gallery-photo/heart.svg" alt="icon">
+							<p>200</p>
+						</div>
+					</div>
+				</figure>
+
+				<figure class="gallery__item--first">
+					<div class="hidden-block">
+						<img class="icon-more-little" src="img/gallery-photo/icon-more.svg" alt="icon">
+						<div class="icon-basket-little dis-flex">
+							<img src="img/gallery-photo/basket.svg" alt="icon">
+						</div>
+
+						<div>
+							<a class="icon-text-little dis-flex" href="">Узнай, что на мне</a>
+						</div>
+						<div class="icon-like-little dis-flex">
+							<img src="img/gallery-photo/heart.svg" alt="icon">
+							<p>200</p>
+						</div>
+					</div>
+				</figure>
+
+				<figure class="gallery__item--second">
+					<div class="hidden-block">
+						<img class="icon-more-little" src="img/gallery-photo/icon-more.svg" alt="icon">
+						<div class="icon-basket-little dis-flex">
+							<img src="img/gallery-photo/basket.svg" alt="icon">
+						</div>
+						<div>
+							<a class="icon-text-little dis-flex" href="">Узнай, что на мне</a>
+						</div>
+						<div class="icon-like-little dis-flex">
+							<img src="img/gallery-photo/heart.svg" alt="icon">
+							<p>200</p>
+						</div>
+					</div>
+				</figure>
+
+				<figure class="gallery__item--third">
+					<div class="hidden-block">
+						<img class="icon-more-little" src="img/gallery-photo/icon-more.svg" alt="icon">
+						<div class="icon-basket-little dis-flex">
+							<img src="img/gallery-photo/basket.svg" alt="icon">
+						</div>
+						<div>
+							<a class="icon-text-little dis-flex" href="">Узнай, что на мне</a>
+						</div>
+						<div class="icon-like-little dis-flex">
+							<img src="img/gallery-photo/heart.svg" alt="icon">
+							<p>200</p>
+						</div>
+					</div>
+				</figure>
+
+				<figure class="gallery__item--fourth">
+					<div class="hidden-block">
+						<img class="icon-more-little" src="img/gallery-photo/icon-more.svg" alt="icon">
+						<div class="icon-basket-little dis-flex">
+							<img src="img/gallery-photo/basket.svg" alt="icon">
+						</div>
+						<div>
+							<a class="icon-text-little dis-flex" href="">Узнай, что на мне</a>
+						</div>
+						<div class="icon-like-little dis-flex">
+							<img src="img/gallery-photo/heart.svg" alt="icon">
+							<p>200</p>
+						</div>
+					</div>
+				</figure>
+
+			</div>
+		</div>
+	</main>
+	<div class="container-footer" >
+			<footer class="footer">
+				<div class="footer-block">
+					<h3 class="title">Узнайте первыми о новинках</h3>
+					<form class="form" action="#" id="form">
+						<label for="email"></label>
+						<input class="input" placeholder="Адрес электронной почты" type="text" name="email" id="email" required>
+						<button class="form-btn-close" type="reset" title="Click me to clear the input field">&times;</button>
+						<small>Error message</small>
+						<button class="form-btn" type="submit"> Подписаться</button>
+					</form>
+				</div>				
+				<div class="footer-wrap">
+					<div class="footer-block">
+						<h3 class="title">Покупателям</h3>
+						<ul class="text">
+							<li>
+								<a href="#">Акции</a>
+							</li>
+							<li>
+								<a href="#">Каталог</a>
+							</li>
+							<li>
+								<a href="#">Бренды</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-block">
+						<h3 class="title">О нас</h3>
+						<ul class="text">
+							<li>
+								<a href="#">О компании</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">команда</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/menu-burger.js"></script>
+	<script src="js/gallery.js"></script>
+	<script src="js/plus-minus-btns.js"></script>
+	<script src="js/email.js"></script>
+</body>
+</html>

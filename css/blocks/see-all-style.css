@@ -1,0 +1,8 @@
+.see-all-style {
+    margin: 0 auto;
+}
+@media screen and (max-width: 1444px) and (min-width: 787px) {
+    .see-all-style{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,44 @@
+body {
+	font-family: Roboto, serif;
+	line-height: 20px;
+	letter-spacing: 0.04em;
+	box-sizing: content-box;
+	color: #333333;
+}
+main {
+	margin-top: 60px;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1390px;
+	margin: 0 auto;
+}
+.dis-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1444px) and (min-width: 787px) {
+	main {
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+	.container {
+		max-width: 650px;
+	}
+}
+
+@media screen and (max-width: 786px) and (min-width: 375px) {
+	main {
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+	.container {
+		max-width: 375px;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
