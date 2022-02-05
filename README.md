@@ -1,6 +1,6 @@
-#Monty
+Monty
 ___________________
- ###👋This repository is made using technologies:
+👋This repository is made using technologies:
  + CSS Flexible Box Layout
  + CSS grid layout
  ###Responsive screen resolutions from 375 px
